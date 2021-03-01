@@ -11,7 +11,7 @@ git branch: 'main', credentialsId: 'e44652ce-bc38-4e73-861a-f9dc731c2a27', url: 
 }
 stage ('Clean') {
 steps {
-sh 'mvn clean'
+sh 'mvn clean install -U'
 }
 }
 stage ('Compile') {
