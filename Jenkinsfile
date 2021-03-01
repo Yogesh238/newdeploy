@@ -14,11 +14,6 @@ steps {
 sh 'mvn clean'
 }
 }
-stage('Build') {
-steps {
-sh 'mvn -B -DskipTests clean package'
-}
-}
 stage ('Compile') {
 steps {
 sh 'mvn compile'
