@@ -6,7 +6,7 @@ maven 'maven'
 stages {
 stage('Git Checkout') {
 steps {
-git branch: 'main', credentialsId: 'e44652ce-bc38-4e73-861a-f9dc731c2a27', url: 'https://github.com/Yogesh238/game.git'
+git branch: 'main', credentialsId: 'e44652ce-bc38-4e73-861a-f9dc731c2a27', poll: false, url: 'https://github.com/Yogesh238/newdeploy.git'
 }
 }
 stage ('Clean') {
